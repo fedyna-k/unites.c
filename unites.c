@@ -14,9 +14,10 @@
     (k, n / 2);return(k2*k2)%10;}} int main( int 
     argc,char *argv[]){if(argc!=3){return 1;}int
     k=strtol(argv[1],NULL,10)%10,n=strtol(argv[2]
-                        ,NULL,10);int mod=
-                        ord_m10(k);printf
-                        ("%s^%s = %d mod "
-                        "10\n",argv[1],
-                        argv[2],pow_m10(k,
-                        n%mod));return 0;}
+                        ,NULL,10);int
+                        mod=ord_m10(k)
+                        ;printf("%s^%s"
+                        " = %d mod 10\n"
+                        ,argv[1],argv[
+                        2],pow_m10(k,n
+                        %mod));return 0;}
